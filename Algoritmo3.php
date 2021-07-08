@@ -17,36 +17,17 @@
 <div class="column1" >
 
             <div class="inner">
-				<form action = "base.php" method = "post">
+				<form action = "base3.php" method = "post">
 					<label class="form-group">
-						<input type="text" class="form-control1 " id = "sec1" name = "sec1" type = "text" required>
-						<span>Secuencia 1</span>
-						<span class="border"></span>
+						<input class="form-control1" id = "archivo" name = "archivo" type = "file">
+						
 					</label>
-					<label class="form-group">
-						<input type="text" class="form-control1" id="sec2" name="sec2" type="text" required>
-						<span for="">Secuencia 2</span>
-						<span class="border"></span>
-					</label>
+
 
                     <label class="form-group">
-						<input type="text" class="form-control1" id="cost" name="cost" type="text" required>
-						<span for="">COSTO</span>
+						<input type="text" class="form-control1" id="query" name="query" type="text" required>
+						<span for="">CONSULTA</span>
 						<span class="border"></span>
-					</label>
-
-					<label class="form-group">
-					Algoritmo de Distancia
-					<br>
-					<input  type="radio" name="dist" value="ag1"> Jukes-cantor
-					<input type="radio" name="dist" value="ag2"> Kimura
-					</label>
-
-					<label class="form-group">
-					Arbol Filogenetico
-					<br>
-					<input  type="radio" name="tree" value="tree1"> UPGMA
-					<input type="radio" name="tree" value="tree2"> Neighbor
 					</label>
 
 					<button type="Submit" >Alinear 
@@ -71,16 +52,10 @@
          ?>
 </div>
 
-
-<div>
-<img src="v4.png" alt="">
-</div>
-
-			
-
-    
+   
 </div>
 
 <footer> </footer>
 </body>
 </html>
+

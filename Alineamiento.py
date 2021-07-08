@@ -77,7 +77,7 @@ tree = sys.argv[5]
 
 #########AG1############
 
-l=len(str(secuencia1))
+l=len(secuencia1)
 num_match = num_mismatch = 0 
 for i in range (0,l):
 	if secuencia1[i] == secuencia2[i]:
@@ -146,17 +146,29 @@ for val in allineaciones:
   print(str(val[0][::-1]) + " " + str(val[1][::-1]))
 print("Score")
 print(answer[3][3])
-# print("K")
-# print(K)
-g=open("dis.txt","w")
-for i in range (0 , 2):
-  for j in range (0,2):
-    if(i==j):
-      g.write(str(0)+' ')
-    else:
-      g.write(str(K)+' ')
-  g.write('\n')
-g.close() 
+
+
+if dist=="ag1":
+  g=open("dis.txt","w")
+  for i in range (0 , 2):
+    for j in range (0,2):
+      if(i==j):
+        g.write(str(0)+' ')
+      else:
+        g.write(str(K)+' ')
+    g.write('\n')
+  g.close() 
+  
+else:
+  g=open("dis.txt","w")
+  for i in range (0 , 2):
+    for j in range (0,2):
+      if(i==j):
+        g.write(str(0)+' ')
+      else:
+        g.write(str(res_dist2)+' ')
+    g.write('\n')
+  g.close() 
 
 
 
@@ -164,27 +176,30 @@ g.close()
 
 
 
-
-f.write("hola "+ dist + '\n')
+f.write("------- RESULTADO DEL ALINEAMIENTO ---------\n")
 
 f.write("Las secuencias son \n")
 f.write("Sec1: " +str(secuencia1) +"\n")
 f.write("Sec1: " +str(secuencia2) +"\n")
-f.write("---------\n")
+f.write("----------------------------------\n")
+
 #for i in (matrix_similitud):
 #  f.write(str(i)+'\n')
-f.write("---------\n")
+f.write("----------------------------------\n")
+
 for i in (answer):
   f.write(str(i)+'\n')
-f.write("---------\n")
+f.write("----------------------------------\n")
+
 for val in allineaciones:
   f.write(str(val[0][::-1]) + " " + str(val[1][::-1]+'\n'))
 
 #f.write('asd = '+ str(answer[3][3]))
 
-f.write("---------\n")
+f.write("----------------------------------\n")
 
-f.write("algo-dist:::::::"+str(dist)+'\n')
+
+#f.write("algo-dist:::::::"+str(dist)+'\n')
 
 if dist=="ag1":
   f.write("numero de coincidencias: "+str(num_match)+"\n")
@@ -196,8 +211,8 @@ else:
   else:
     f.write("La distancia molecular entre ambas secuencias es: "+ str(res_dist2)+"\n")
 
-f.write("---------\n")
-f.write("algo-tree:::::::"+str(tree)+'\n')
+f.write("----------------------------------\n")
+
 
 
 f.close()

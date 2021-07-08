@@ -13,6 +13,6 @@
 		$command = escapeshellcmd('python /xampp/htdocs/Bioapp/UPGMA2.py ');
 		$output = shell_exec($command);
 		//echo $output;
-		$url="http://localhost/Bioapp/index.php";
+		$url="http://localhost/Bioapp/Algoritmo1.php";
 		echo "<SCRIPT>window.location='$url';</SCRIPT>";
 ?>

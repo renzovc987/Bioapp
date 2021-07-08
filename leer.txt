@@ -1,0 +1,27 @@
+------- RESULTADO DEL ALINEAMIENTO ---------
+ID: gi|6273289|gb|AF191663.1|AF191663
+Name: gi|6273289|gb|AF191663.1|AF191663
+Description: gi|6273289|gb|AF191663.1|AF191663 Opuntia bradtiana rpl16 gene; chloroplast gene for chloroplast product, partial intron sequence
+Number of features: 0
+Seq('TATACATTAAAGGAGGGGGATGCGGATAAATGGAAAGGCGAAAGAAAGAAAAAA...AGA')
+ID: gi|6273291|gb|AF191665.1|AF191665
+Name: gi|6273291|gb|AF191665.1|AF191665
+Description: gi|6273291|gb|AF191665.1|AF191665 Opuntia marenae rpl16 gene; chloroplast gene for chloroplast product, partial intron sequence
+Number of features: 0
+Seq('TATACATTAAAGGAGGGGGATGCGGATAAATGGAAAGGCGAAAGAAAGAAAAAA...AGA')
+ID: gi|6273290|gb|AF191664.1|AF191664
+Name: gi|6273290|gb|AF191664.1|AF191664
+Description: gi|6273290|gb|AF191664.1|AF191664 Opuntia clavata rpl16 gene; chloroplast gene for chloroplast product, partial intron sequence
+Number of features: 0
+Seq('TATACATTAAAGGAGGGGGATGCGGATAAATGGAAAGGCGAAAGAAAGAAAAAA...AGA')
+ID: gi|6273287|gb|AF191661.1|AF191661
+Name: gi|6273287|gb|AF191661.1|AF191661
+Description: gi|6273287|gb|AF191661.1|AF191661 Opuntia kuehnrichiana rpl16 gene; chloroplast gene for chloroplast product, partial intron sequence
+Number of features: 0
+Seq('TATACATTAAAGAAGGGGGATGCGGATAAATGGAAAGGCGAAAGAAAGAAAAAA...AGA')
+ID: gi|6273286|gb|AF191660.1|AF191660
+Name: gi|6273286|gb|AF191660.1|AF191660
+Description: gi|6273286|gb|AF191660.1|AF191660 Opuntia echinacea rpl16 gene; chloroplast gene for chloroplast product, partial intron sequence
+Number of features: 0
+Seq('TATACATAAAAGAAGGGGGATGCGGATAAATGGAAAGGCGAAAGAAAGAAAAAA...AGA')
+----------------------------------

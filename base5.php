@@ -1,7 +1,9 @@
 <?php
-		$param1 = $_POST['sec1'];
-		$param2 = $_POST['sec2'];
-		$command = escapeshellcmd('python /xampp/htdocs/Bioapp/JC.py '.$param1 .' '.$param2);
+		$param1 = $_POST['archivo'];
+
+		$command = escapeshellcmd('python /xampp/htdocs/Bioapp/muscle.py '.$param1);
 		$output = shell_exec($command);
-		echo $output;
+		//echo $output;
+		$url="http://localhost/Bioapp/Algoritmo5.php";
+		echo "<SCRIPT>window.location='$url';</SCRIPT>";
 ?>

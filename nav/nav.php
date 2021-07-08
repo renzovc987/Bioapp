@@ -17,7 +17,8 @@
         <li><a href="Algoritmo1.php">Needleman–Wunsch</a></li>
         <li><a href="Algoritmo2.php">Smith-waterman</a></li>
         <li><a href="Algoritmo3.php">BLAST</a></li>
-        <li><a>Alineamiento multiple</a></li>
+        <li><a href="Algoritmo5.php">Alineamiento multiple</a></li>
+        <li><a href="Algoritmo4.php">UPGMA</a></li>
         <!-- 
         <li><a href="Jukes.php">Jukes-cantor model</a></li>
         <li><a href="kimura.php">Kimura model</a></li>

@@ -7,6 +7,7 @@ import os
 from io import StringIO
 from Bio import Phylo
 import matplotlib.pyplot as plt
+
 def matrixMinimum(matrix, length):
     min_index_i = 0
     min_index_j = 0
@@ -128,15 +129,14 @@ def replaceWithSeq(res,length):
 
 
 matrix = []
-file = "dis.txt"
+
+file = "distance.txt"
+
 f = open(file)
+
 matrix = [[x for x in ln.split()] for ln in f]       
 matrix = numpy.asarray(matrix)
 matrix = matrix.astype(numpy.float)
-
-print("-----------------------")
-print(matrix)
-print("-----------------------")
 length = len(matrix)
 dictionary={}
 finalCluster = upgma(matrix, length,dictionary)
@@ -160,7 +160,7 @@ fig = plt.figure(figsize=(10, 20), dpi=100)
 axes = fig.add_subplot(1, 1, 1)
 Phylo.draw(tree, axes=axes,do_show=False)
 # plt.show()
-plt.savefig('v4.png')
+plt.savefig('v44.png')
 print("Result")   
 print(result) 
 print("TREE")

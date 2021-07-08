@@ -17,7 +17,7 @@
 <div class="column1" >
 
             <div class="inner">
-				<form action = "base.php" method = "post">
+				<form action = "base2.php" method = "post">
 					<label class="form-group">
 						<input type="text" class="form-control1 " id = "sec1" name = "sec1" type = "text" required>
 						<span>Secuencia 1</span>

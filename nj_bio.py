@@ -3,14 +3,7 @@ import numpy as np
 import scipy as scipy
 import itertools
 from treelib import Node, Tree
-from io import StringIO
-import contextlib
-import matplotlib.pyplot as plt
-import matplotlib
-# from io import StringIO
-from Bio import Phylo
 # pip install treelib
-# pip install anytree
 
 def calculateQ(d):
     #print('calculateQ')
@@ -112,7 +105,7 @@ def NeighbourJoining(d,s):
 
         draw_dist_A=str(round(pairDist[0],2))
         draw_dist_B=str(round(pairDist[1],2))
-        string_tree="("+labels[pair_A]+":"+draw_dist_A+","+labels[pair_B]+":"+draw_dist_B+")"
+        string_tree="("+string_tree+labels[pair_A]+":"+draw_dist_A+","+labels[pair_B]+":"+draw_dist_B+")"
         if (len(labels[pair_A])==1):
             arbol.insert(0,"tree.create_node(\""+labels[pair_A]+"\", \""+labels[pair_A]+"\", parent=\""+new_parent+"\")")
         if (len(labels[pair_A])>1):
@@ -139,7 +132,7 @@ def NeighbourJoining(d,s):
 
         draw_dist_A=str(round(pairDist[0]*2,2))
         draw_dist_B=str(round(pairDist[1]*2,2))
-        string_tree="("+string_tree+labels[pair_B]+":"+draw_dist_B+","+labels[pair_A]+":"+draw_dist_A+")"+";"
+        string_tree="("+string_tree+labels[pair_B]+":"+draw_dist_B+")"
         if (len(labels[pair_A])==1):
             arbol.insert(0,"tree.create_node(\""+labels[pair_A]+"\", \""+labels[pair_A]+"\", parent=\""+new_parent+"\")")
         if (len(labels[pair_A])>1):
@@ -162,18 +155,8 @@ def NeighbourJoining(d,s):
     for i in arbol:
         f.write(i)
         f.write("\n")
-    f.close()
-    # print(new_var)
-    # return string_tree
 
-@contextlib.contextmanager
-def stdoutIO(stdout=None):
-    old = sys.stdout
-    if stdout is None:
-        stdout = StringIO()
-    sys.stdout = stdout
-    yield stdout
-    sys.stdout = old
+
 
 def run(distMatrix,s):
     NeighbourJoining(distMatrix,s)
@@ -182,39 +165,14 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         print ("Usage: neighbour-joining.py")
         sys.exit(1)
-    matrix = []
-    file = "dis.txt"
-    f = open(file)
-    matrix = [[x for x in ln.split()] for ln in f]       
-    matrix = np.asarray(matrix)
-    matrix = matrix.astype(np.float)
+
     distMatrix = np.array(
-         [[0, 8, 4, 6],
-            [8, 0, 8, 8],
-            [4, 8, 0, 6],
-            [6, 8, 6, 0]]
+         [[0, 0.4, 0.35, 0.6],
+            [0.4, 0, 0.45, 0.7],
+            [0.35, 0.45, 0, 0.55],
+            [0.6, 0.7, 0.55, 0]]
         )
-    print("-----------------------")
-    print(matrix)
-    print("-----------------------")
-    length = len(matrix)
-    # distMatrix = np.array(
-        # [[0,0.4],
-        # [0.4,0]])
-    # print("size")
-    # print(matrix.shape)
-    # np.array(
-    #      [[0, 0.4, 0.35, 0.6],
-    #         [0.4, 0, 0.45, 0.7],
-    #         [0.35, 0.45, 0, 0.55],
-    #         [0.6, 0.7, 0.55, 0]]
-    #     )
-    s=[]
-    for i in range(1,length+1):
-        s.append(chr(65 +i -1))
-    # s="AB"
-    print("Labels S")
-    print(s)
+    s="ABCD"
     '''
     distMatrix = np.array(
          [[0, 8, 4, 6],
@@ -223,19 +181,5 @@ if __name__ == "__main__":
             [6, 8, 6, 0]]
         )
     '''
-    run(matrix,s)
-
-
-    with stdoutIO() as s:
-        exec(open("arbol_philo.py").read())
-
-    print("out:", s.getvalue())
-
-    # tree=Phylo.read(StringIO(string_tree),"newick")
-    # fi.close()
-    # matplotlib.rc('font',size=30)
-    # fig = plt.figure(figsize=(10, 20), dpi=100)
-    # axes = fig.add_subplot(1, 1, 1)
-    # Phylo.draw(tree, axes=axes,do_show=False)
-    # # plt.show()
-    # plt.savefig('nj.png')
+    run(distMatrix,s)
+    exec(open("arbol_philo.py").read())
