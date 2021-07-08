@@ -1,0 +1,30 @@
+MMKTLALYGLT,Thaumatin-like protein 1,A0A1I9Q0U6P81075
+MKMLLLLLCLG,Major urinary protein group 1,P81075
+METRLSLRKRS,Uncharacterized protein,B5QSC7
+MLNSPRREDKR,Leader peptide,Q47345
+YCDGKSERNIL,Retinol binding protein 4,A8WE73
+MAARLMNAQAQ,Mitochondrial aconitase,Q9NFX0
+ATVVWPKYELL,Unidentified 5.7/35K protein,Q7M1U2
+MSNLAYNALKI,Plasmid cp32-4,O68237
+GEAANVMGAPK,Putative oxygen-evolving enhancer protein 2,P84727
+XAEIEAEQNIE,Unknown protein from spot 125 of 2D-PAGE of thylakoid,P82336
+KFADENFQLKH,Peptidyl-prolyl cis-trans isomerase,P85444
+KYIXXDDVIEL,Unknown protein from 2D-PAGE of fibroblasts,P38643
+MSVSCWEFNAG,Protein YoaM,P0DSF7
+AVPPRYGYTRG,68 kDa cell wall protein,P80843
+EQCQDMAGGAR,33 kDa cell wall protein,P80792
+EVLYIPVTTDA,50 kDa cell wall protein,P80805
+SPVEGGPXGXL,39 kDa cell wall protein,P80807
+MRNIKVKPFLN,Cold shock protein CSI5,P81095
+SHGSHETDEEF,Cytochrome c oxidase subunit 5A,P99501
+VEIIANDQGNR,Heat shock 70 kDa protein,P81672
+KYPLEKFQNIG,Elongation factor G,P81350
+AVFVILTNVYT,14 kDa cell wall protein,P80796
+MPPPGSKSXGT,65 kDa cell wall protein,P82436
+GAGGALFVHRD,NADH dehydrogenase flavoprotein 2,P49820
+MISKAIRCTLVN,Basonuclin 2,Q06HC0
+LKGTGEYNIVNS,YEL062,Q8J1G6
+MYAHAVHCLIYD,DapC protein,Q945C2
+MASARRILFLGE,p80 protein,Q945C3
+MSSNVRLTIRSS,Putative integron gene cassette protein,B7VDY7
+MRTLTMTSKLTI,Fragment of ATP-Synthase alpha,Q50342
