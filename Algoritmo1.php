@@ -25,20 +25,20 @@
 					</label>
 					<label class="form-group">
 						<input type="text" class="form-control1" id="sec2" name="sec2" type="text" required>
-						<span for="">Secuencia 2</span>
+						<span for="">Secuencia - 2</span>
 						<span class="border"></span>
 					</label>
 
                     <label class="form-group">
 						<input type="text" class="form-control1" id="cost" name="cost" type="text" required>
-						<span for="">COSTO</span>
+						<span for="">-COSTO-</span>
 						<span class="border"></span>
 					</label>
 
 					<label class="form-group">
 					Algoritmo de Distancia
 					<br>
-					<input  type="radio" name="dist" value="ag1"> Jukes-cantor
+					<input  type="radio" name="dist" value="ag1"> Jukes-Cantor
 					<input type="radio" name="dist" value="ag2"> Kimura
 					</label>
 
